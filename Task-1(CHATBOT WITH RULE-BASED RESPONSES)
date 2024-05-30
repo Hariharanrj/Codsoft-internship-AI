@@ -26,10 +26,3 @@ while True:
     response = chatbot_response(user_input)
     print("Chatbot:", response)
 
-output:
-You: hai
-Chatbot: None
-You: hello
-Chatbot: Hello! How can I assist you today?
-You: exit
-Chatbot: Goodbye!
