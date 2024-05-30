@@ -1,0 +1,35 @@
+def chatbot_response(user_input):
+    user_input = user_input.lower()
+
+    if "hello" in user_input or "hi" in user_input:
+        return "Hello! How can I assist you today?"
+    elif "how are you" in user_input:
+        return "I'm just a bot, but I'm functioning as expected! How can I help you?"
+    elif "bye" in user_input or "goodbye" in user_input:
+        return "Goodbye! Have a great day!"
+    elif "name" in user_input:
+        return "I am a simple chatbot created to assist you. What's your name?"
+    elif "weather" in user_input:
+        return "I don't have real-time weather data, but you can check a weather website or app for the latest updates."
+    elif "help" in user_input:
+        return "Sure! I can assist with general inquiries. What do you need help with?"
+    elif "thank you" in user_input or "thanks" in user_input:
+        return "You're welcome! If you have any more questions, feel free to ask."
+
+
+# Example of conversation flow
+while True:
+    user_input = input("You: ")
+    if user_input.lower() in ["exit", "quit"]:
+        print("Chatbot: Goodbye!")
+        break
+    response = chatbot_response(user_input)
+    print("Chatbot:", response)
+
+output:
+You: hai
+Chatbot: None
+You: hello
+Chatbot: Hello! How can I assist you today?
+You: exit
+Chatbot: Goodbye!
