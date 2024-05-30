@@ -95,7 +95,3 @@ if __name__ == "__main__":
     play_game()
 
 
-New Game! You are 'X' and the AI is 'O'.
-|   |   |   |
-|   |   |   |
-|   |   |   |
