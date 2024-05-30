@@ -40,24 +40,4 @@ recommendations = get_recommendations(user_id, user_item_matrix, user_similarity
 print(f"\nTop recommendations for User {user_id}:")
 print(recommendations)
 
-output:
-User-Item Matrix:
-movie_id    1    2    3    4
-user_id                     
-1         5.0  3.0  4.0  0.0
-2         4.0  2.0  0.0  5.0
-3         0.0  2.0  4.0  4.0
-4         3.0  0.0  0.0  5.0
 
-User Similarity Matrix:
-user_id         1         2         3         4
-user_id                                        
-1        1.000000  0.548128  0.518545  0.363803
-2        0.548128  1.000000  0.596285  0.945923
-3        0.518545  0.596285  1.000000  0.571662
-4        0.363803  0.945923  0.571662  1.000000
-
-Top recommendations for User 1:
-movie_id
-4    6.633838
-dtype: float64
